@@ -17,4 +17,12 @@ app.get('/about', function(req, res) {
 });
 
 app.listen(8080);
+
+exports.myDateTime = function () {
+  return Date();
+};
+
+
+console.log('Logs: ' & exports.myDateTime());
+
 console.log('Server is listening on port 8080');
